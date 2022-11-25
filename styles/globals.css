@@ -1,0 +1,214 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-size: 10px; /* // 1rem */
+  color: theme("colors.primaryColor");
+}
+
+::-webkit-scrollbar {
+  width: 0.4rem;
+}
+
+/* Track */
+body::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  margin-top: 10rem;
+  border-radius: 1rem;
+  background: theme('colors.grey'); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 130rem;
+}
+
+.title {
+  margin-top: 0.6rem;
+  margin-bottom: 2.6rem;
+}
+
+.notify.success {
+  color: theme("colors.success") !important;
+  border: 1px solid theme("colors.success") !important;
+  background: theme("colors.successWeak") !important;
+}
+
+.notify .notify__title {
+  color: theme("colors.success");
+  font-weight: 700;
+  padding-left: 2.5rem;
+  @apply typo-small;
+}
+
+.notify .notify__body {
+  color: theme("colors.success");
+  padding-left: 2.5rem;
+  @apply typo-small;
+}
+
+.notify .notify__icon {
+  left: 0.2rem;
+  top: 0rem;
+}
+
+.select .select__input {
+  padding: 0.6rem 2.2rem 0.6rem 2.8rem;
+  margin-right: 1.1rem;
+}
+
+.select .select__input .select__input--option {
+  outline: none;
+}
+
+.select .select__input .select__input--icon {
+  left: 0.8rem;
+  top: 0.8rem;
+}
+
+.select .select__input .select__input--select {
+  right: 0.8rem;
+  top: 1.5rem;
+}
+
+.location__table {
+  margin-bottom: 2.9rem;
+  max-height: 40rem;
+}
+
+.location__table::-webkit-scrollbar-track {
+    margin-top: 2rem !important;
+}
+
+table thead {
+  border-bottom: 1px solid theme("colors.grey");
+  background: white;
+  top: -0.1rem;
+}
+
+table thead tr th {
+  padding: 1.5rem;
+  padding-bottom: 0.9rem;
+  text-transform: uppercase;
+  @apply typo-small;
+}
+
+table tbody tr td {
+  border-bottom: 1px solid theme("colors.greyVeryWeak");
+  padding: 1.5rem;
+}
+
+.search-input {
+  margin-left: 3rem;
+  width: 33.8rem;
+  padding: 0.9rem 4.5rem 0.9rem 4.8rem;
+  border-bottom-left-radius: 10rem;
+  border-top-left-radius: 10rem;
+}
+
+.search-button {
+  cursor: pointer;
+  padding: 0.9rem 1.5rem 0.9rem 1.5rem;
+  border-bottom-right-radius: 10rem;
+  border-top-right-radius: 10rem;
+  color: white;
+}
+
+.search-input .search-input__icon {
+  left: 1rem;
+  top: 0.7rem;
+}
+
+.search-input .search-input__close {
+  right: 1rem;
+  top: 1rem;
+}
+
+.pagination .pagination__page--item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.8rem;
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+.empty-table {
+  border-top: 1px solid theme("colors.grey");
+  margin-top: 3.4rem;
+  padding-top: 1.5rem;
+}
+
+.modal {
+  background: #22222254;
+}
+.modal .modal__content {
+  max-width: 55rem;
+  width: 100%;
+  padding: 3rem;
+  box-shadow: 0px 2px 6px 1px #0000001a;
+  border-radius: 0.8rem;
+}
+
+.button {
+  @apply typo-small;
+  padding: 1rem 1.2rem;
+  border-radius: 0.8rem;
+  margin-left: 1.6rem;
+  background: theme("colors.pinkRed");
+  color: white;
+  box-shadow: 0px 1px 2px 0px #1018280d;
+  width: 10rem;
+}
+
+.button.outline {
+  color: black;
+  background: white;
+  border: 1px solid theme("colors.grey");
+  outline-style: none;
+}
+
+.input .input__label {
+  @apply typo-normal;
+  margin-bottom: 0.4rem;
+}
+
+.input input {
+  @apply typo-normal;
+  outline: none;
+  appearance: none;
+  border-radius: 0.6rem;
+  background: white;
+  border: 1px solid theme("colors.grey");
+  height: 3.2rem;
+  padding-left: 1.3rem;
+}
+.input input.error-input {
+  border: 1px solid red;
+}
+
+.input .input__error {
+  margin-top: 0.4rem;
+}
+.input .input__error--text {
+  @apply typo-normal;
+  margin-left: 0.767rem;
+  color: red;
+}
+
+.input-select .input-select__items {
+  border-radius: 0.6rem;
+  padding: 0.5rem 1rem;
+}
